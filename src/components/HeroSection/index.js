@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Video1 from '../../videos/ironvideo1.mp4';
 import Video2 from '../../videos/ironvideo2.mp4';
 import Video3 from '../../videos/ironvideo3.mp4';
-import Video4 from '../../videos/ironvideo4.mp4';
 import {
   HeroContainer,
   HeroBg,
@@ -22,7 +21,7 @@ const HeroSection = () => {
   const [videoSrc, setVideoSrc] = useState(Video1);
 
   useEffect(() => {
-    const videos = [Video1, Video2, Video3, Video4];
+    const videos = [Video1, Video2, Video3];
 
     const videoElement = document.getElementById('heroVideo');
 
@@ -63,10 +62,9 @@ const HeroSection = () => {
         />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Indigenous Iron Construction</HeroH1>
+        <HeroH1>THERMEAU IDF</HeroH1>
         <HeroP>
-          Bridging Cultures, Strengthening Communities and Providing Quality
-          Contracting Services.
+        Pour une eau pure, chaque goutte compte.
         </HeroP>
         <HeroBtnWrapper>
           <Button
@@ -82,7 +80,7 @@ const HeroSection = () => {
             offset={-80}
             onClick={toggleBottom}
           >
-            Get A Free Consultation {hover ? <ArrowRight /> : <ArrowForward />}
+            Obtenez un devis gratuit ! {hover ? <ArrowRight /> : <ArrowForward />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
